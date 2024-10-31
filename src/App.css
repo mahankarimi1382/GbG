@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Iranyekan";
+  src: url(../src/assets/fonts/IRANYekanMobileFN.ttf);
+}
+* {
+  font-family: Iranyekan;
+}
+.bg {
+  background: linear-gradient(
+    310deg,
+    #393d3f 0,
+    #393d3f 20%,
+    #deb317 20%,
+    #deb317 25%,
+    #393d3f 25%,
+    #393d3f 100%
+  );
+}
+
+

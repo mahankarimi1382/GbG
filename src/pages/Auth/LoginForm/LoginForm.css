@@ -1,0 +1,162 @@
+
+
+
+  
+
+  .wrapper {
+    background: rgba(0, 0, 0, 0.479);
+    border: 1px solid ;
+    color: #FFFFFF;
+    padding: 30px 40px;
+    width: 450px;
+    border-radius:10px;
+    font-size: 30px;
+    text-align: center;
+    backdrop-filter: blur(30px);
+
+  }
+
+  .input_box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+
+  .input_box input {
+    width: 100%;
+    height: 100%;
+    background : transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    color : white;
+  }
+
+  .input_box input::placeholder {
+    color: rgba(189, 189, 189, 0.668);
+  }
+
+  .input_box .icon {
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+  }
+
+  .remmember_forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .remmember_forget label input {
+    accent-color: #fff;
+    margin-right: 4px;
+  }
+.remmember_forget a {
+    text-decoration: none;
+    color :#fff
+}
+
+.remmember_forget a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.wrapper .register {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register p a {
+    text-decoration: nont;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+
+ 
+
+
+  .wrapper {
+    background: rgba(0, 0, 0, 0.479);
+    border: 1px solid ;
+    padding: 40px 25px;
+    color: #FFFFFF;
+    width: 80vw;
+    border-radius:10px;
+    font-size: 30px;
+    text-align: center;
+    backdrop-filter: blur(30px);
+
+  }
+
+
+  .input_box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes MoveBackgroundPosition { 
+    0% {
+        background-position: 0% 50%
+    }
+    
+    50% {
+      background-position: 100% 50%
+    }
+    
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
