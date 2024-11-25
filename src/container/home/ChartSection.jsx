@@ -4,7 +4,7 @@ import { FaCoins } from "react-icons/fa";
 
 export default function ChartSection() {
   return (
-    <div dir="ltr" className=" w-[90%] rounded-3xl pb-4 bg-white shadow-md">
+    <div dir="ltr" className=" w-[90%] mb-10 rounded-3xl pb-4 bg-white shadow-md">
       <div className=" w-full gap-2 p-3 px-4 justify-end flex">
         <FaCoins className=" text-xl text-primary-gold" />
         <h5>نمودار قیمت طلا</h5>
