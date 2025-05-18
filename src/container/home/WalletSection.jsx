@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { GiWallet } from "react-icons/gi";
 import { GiCardExchange } from "react-icons/gi";
+import { get_balance } from "../../API/ApiCalling";
+import { tokenStore } from "../../store/Store";
 
 function WalletSection() {
-  const [goldRemain, setGoldRemain] = useState(26);
+  const [goldRemain, setGoldRemain] = useState(0);
   const [goldFull, setGoldFull] = useState(10);
   const [goldScale, setGoldScale] = useState(10);
-
+  const { token } = tokenStore();
+  const fetchData = async () => {
+    const data = await get_balance(token);
+    if (data) {
+      setGoldRemain(data);
+      console.log(data);
+    }
+  };
   useEffect(() => {
+    fetchData();
     if (goldRemain > 9) {
       setGoldFull(50);
       setGoldScale(2);

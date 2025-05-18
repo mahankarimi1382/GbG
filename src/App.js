@@ -10,6 +10,7 @@ import Services from "./pages/User/services/Services";
 import Profile from "./pages/User/profile/Profile";
 import Notifications from "./pages/User/notifications/Notifications";
 import Wallet from "./pages/User/wallet/Wallet";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="user/notifications" element={<Notifications />} />
           <Route path="user/wallet" element={<Wallet />} />
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
     </div>
   );
